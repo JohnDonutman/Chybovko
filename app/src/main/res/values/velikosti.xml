@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="okraje">15dp</dimen>
+    <dimen name="nadpis_velikost">20dp</dimen>
+    <dimen name="text_velikost">16dp</dimen>
+</resources>

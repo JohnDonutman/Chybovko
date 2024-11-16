@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:layout_margin="@dimen/okraje"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@+id/opatreniTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/okamzite_opatreni" />
+
+        <Spinner
+            android:id="@+id/okamziteOpatreniSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Switch
+            android:id="@+id/opravaDiluSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:showText="true"
+            android:text="@string/oprava_dilu"
+            android:textOff="@string/ne"
+            android:textOn="@string/ano"
+            tools:checked="true"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Switch
+            android:id="@+id/opravaLakuSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:showText="true"
+            android:text="@string/oprava_laku"
+            android:textOff="@string/ne"
+            android:textOn="@string/ano"
+            tools:checked="true"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+    </TableRow>
+
+<TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/systemoveOpatreniTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/systemove_opatreni" />
+
+        <Spinner
+            android:id="@+id/systemoveOpatreniSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Switch
+            android:id="@+id/tiskStitkuSwitch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:showText="true"
+            android:text="@string/tisk_stitku"
+            android:textOff="@string/ne"
+            android:textOn="@string/ano"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            style="@style/TextAppearance.AppCompat.Button"
+            android:id="@+id/predchoziButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/predchozi" />
+
+        <Button
+            style="@style/TextAppearance.AppCompat.Button"
+            android:id="@+id/odeslatButton"
+            android:background="@color/green"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/odeslat" />
+    </TableRow>
+
+</TableLayout>

@@ -1,0 +1,44 @@
+<resources>
+    <string name="zadej_incident">Zadej incident</string>
+    <string name="pracoviste">Pracoviště:</string>
+    <string name="zakazka">Zakázka:</string>
+    <string name="zadej_komponenta">Zadej komponentu</string>
+    <string name="nefunkcni_kusy">Počet nefunknčích kusů</string>
+    <string name="pocet_nefunkcnich_kusu">Zadej počet</string>
+    <string name="oblast">Oblast</string>
+    <string name="zadej_popis_vady">Zadej popis vady</string>
+    <string name="zdroj_vady">Zdroj vady</string>
+    <string name="zadej_dodavatele">Zadej dodavatele</string>
+    <string name="znacka_dodavatele">Značka dodavatele</string>
+    <string name="zadej_znacku_dodavatele">Zadej značku</string>
+    <string name="charakter_vady">Charakter vady</string>
+    <string name="druh_vady">Druh vady</string>
+    <string name="externi">Externí</string>
+    <string name="interni">Interní</string>
+
+    <string name="okamzite_opatreni">Okamžité opatření</string>
+    <string name="oprava_dilu">Je potřeba oprava dilu</string>
+    <string name="oprava_laku">Je potřeba oprava laku</string>
+    <string name="zpusobitel">Způsobitel</string>
+    <string name="systemove_opatreni">Systemové opatření</string>
+    <string name="tisk_stitku">Označeno štítkem NESHODA</string>
+    <string name="ano">Ano</string>
+    <string name="ne">Ne</string>
+
+    <string name="app_name">Chybovko</string>
+    <string name="identifikace">Identifikace</string>
+    <string name="fotky">Fotky</string>
+    <string name="reseni">Řešení</string>
+    <string name="nove_chybovko">Nové chybovko</string>
+    <string name="nacti_chybovko">Načíst chybovko</string>
+    <string name="seznam_chybovek">Seznam rozpracovaných chybovek</string>
+
+    <string name="zrusit">Zrušit</string>
+    <string name="predchozi">Předchozí</string>
+    <string name="pokracovat">Pokračovat</string>
+    <string name="odeslat">Odeslat</string>
+    <string name="ulozit">Uložit</string>
+    <string name="ulozeno">Uloženo</string>
+
+
+</resources>
