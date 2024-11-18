@@ -33,6 +33,11 @@
     <string name="nacti_chybovko">Načíst chybovko</string>
     <string name="seznam_chybovek">Seznam rozpracovaných chybovek</string>
 
+    <string name="vykres">Výkres</string>
+    <string name="celek">Celek</string>
+    <string name="znacka">Značka</string>
+    <string name="detail">Detail</string>
+
     <string name="zrusit">Zrušit</string>
     <string name="predchozi">Předchozí</string>
     <string name="pokracovat">Pokračovat</string>

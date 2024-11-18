@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<TableLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_margin="@dimen/okraje"
     xmlns:tools="http://schemas.android.com/tools">
@@ -29,12 +29,12 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/opravaDiluSwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="48dp"
-            android:showText="true"
+            app:showText="true"
             android:text="@string/oprava_dilu"
             android:textOff="@string/ne"
             android:textOn="@string/ano"
@@ -46,15 +46,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/opravaLakuSwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="48dp"
-            android:showText="true"
+            app:showText="true"
             android:text="@string/oprava_laku"
-            android:textOff="@string/ne"
             android:textOn="@string/ano"
+            android:textOff="@string/ne"
             tools:checked="true"
             tools:ignore="UseSwitchCompatOrMaterialXml" />
     </TableRow>
@@ -80,16 +80,15 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
-        <Switch
+        <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/tiskStitkuSwitch"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:minHeight="48dp"
-            android:showText="true"
+            app:showText="true"
             android:text="@string/tisk_stitku"
             android:textOff="@string/ne"
-            android:textOn="@string/ano"
-            tools:ignore="UseSwitchCompatOrMaterialXml" />
+            android:textOn="@string/ano" />
     </TableRow>
 
     <TableRow

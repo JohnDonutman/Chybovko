@@ -1,23 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
+    android:layout_margin="@dimen/okraje"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".FotkyActivity">
+    android:orientation="vertical">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
+
+    <HorizontalScrollView
+        android:elevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="@id/guideline"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
+        app:layout_constraintBottom_toBottomOf="@id/guidelineVrchni">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <androidx.cardview.widget.CardView
+                android:layout_margin="@dimen/okraje"
+                android:id="@+id/vykresCardView"
+                app:cardCornerRadius="@dimen/okraje"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="@string/vykres"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:id="@+id/vykresImageView"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:importantForAccessibility="no"
+                        app:srcCompat="@android:drawable/ic_input_add" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="@dimen/okraje"
+                android:id="@+id/celekCardView"
+                app:cardCornerRadius="@dimen/okraje"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/celek"
+                        android:layout_gravity="center"/>
+
+                    <ImageView
+                        android:id="@+id/celekImageView"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:importantForAccessibility="no"
+                        app:srcCompat="@android:drawable/ic_input_add" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="@dimen/okraje"
+                android:id="@+id/znackaCardView"
+                app:cardCornerRadius="@dimen/okraje"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/znacka"
+                        android:layout_gravity="center"/>
+
+                    <ImageView
+                        android:id="@+id/znackaImageView"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:importantForAccessibility="no"
+                        app:srcCompat="@android:drawable/ic_input_add" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="@dimen/okraje"
+                android:id="@+id/detailCardView"
+                app:cardCornerRadius="@dimen/okraje"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/detail"
+                        android:layout_gravity="center"/>
+
+                    <ImageView
+                        android:id="@+id/detailImageView"
+                        android:layout_width="80dp"
+                        android:layout_height="match_parent"
+                        android:importantForAccessibility="no"
+                        app:srcCompat="@android:drawable/ic_input_add" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </HorizontalScrollView>
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
+        android:id="@+id/guidelineVrchni"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -30,32 +148,42 @@
 
     </androidx.camera.view.PreviewView>
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineSpodni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8"/>
+
     <Button
         android:id="@+id/predchoziButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/guidelineSpodni"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         android:layout_marginBottom="@dimen/okraje"
         android:text="@string/predchozi" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:importantForAccessibility="no"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <Button
+        android:id="@+id/vyfotitButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:layout_margin="@dimen/okraje"
+        android:background="@android:drawable/ic_menu_camera"
         android:clickable="true"
-        app:srcCompat="@android:drawable/ic_menu_camera" />
+        android:importantForAccessibility="no"
+        app:layout_constraintTop_toTopOf="@id/guidelineSpodni"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <Button
         android:id="@+id/dalsiButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/okraje"
+        app:layout_constraintTop_toTopOf="@id/guidelineSpodni"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:text="@string/pokracovat" />

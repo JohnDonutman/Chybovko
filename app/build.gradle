@@ -6,6 +6,10 @@ android {
     namespace 'com.example.chybovko'
     compileSdk 34
 
+    buildFeatures {
+        viewBinding true
+    }
+
     defaultConfig {
         applicationId "com.example.chybovko"
         minSdk 26

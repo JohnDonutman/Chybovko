@@ -10,7 +10,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/nove_chybovko_button"
+        android:id="@+id/noveChybovkoButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/nove_chybovko"
@@ -28,7 +28,7 @@
         android:orientation="vertical" />
 
     <Button
-        android:id="@+id/nacti_chybovko_button"
+        android:id="@+id/nactiChybovkoButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/nacti_chybovko"
